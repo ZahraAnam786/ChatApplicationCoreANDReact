@@ -1,0 +1,22 @@
+
+
+Install-Package Microsoft.EntityFrameworkCore.Design -ProjectName ChatApplicationCoreANDReact
+
+Add-Migration InitialMigration -Project Infrastructure -StartupProject ChatApplicationCoreANDReact
+
+
+For Swagger
+
+Install-Package Swashbuckle.AspNetCore
+
+For Domain
+Install-Package Microsoft.EntityFrameworkCore.Relational
+
+
+
+JWT Token
+
+ Microsoft.AspNetCore.Authentication.JwtBearer
+
+
+

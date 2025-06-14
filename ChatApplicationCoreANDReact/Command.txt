@@ -1,0 +1,15 @@
+
+
+Microsoft.EntityFrameworkCore
+
+Microsoft.EntityFrameworkCore.SqlServer
+
+Microsoft.EntityFrameworkCore.Tools
+
+Microsoft.EntityFrameworkCore.Design
+
+Microsoft.AspNetCore.Authentication.JwtBear
+
+AutoMapper
+
+dotnet add package Microsoft.AspNetCore.SignalR

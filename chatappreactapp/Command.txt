@@ -1,0 +1,10 @@
+
+npm install
+
+npm install @reduxjs/toolkit react-redux react-router-dom
+
+npm install axios
+
+npm install react-toastify
+
+npm install @microsoft/signalr

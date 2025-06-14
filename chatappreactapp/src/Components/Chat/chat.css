@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/materialdesignicons.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/materialdesignicons.css');
+
+
+
+/* Outer Navbar Container */
+.app-navbar {
+    width: 100%;
+    position: fixed; /* Makes the navbar stick to the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures it stays on top of other content */
+    /* Inline styles from HTML are retained for background and text color,
+       but ideally these would also be moved to CSS for consistency.
+       Example: background-color: skyblue; color: white; */
+}
+
+/* Inner Container for content alignment */
+.navbar-container {
+    max-width: 1200px; /* Standard container width, adjust as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Add some horizontal padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Pushes brand to left, nav items to right */
+    align-items: center; /* Vertically aligns items in the middle */
+    height: 55px; /* Standard navbar height, adjust as needed */
+}
+
+/* Navbar Header Section (for brand/logo) */
+.navbar-header-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar Brand Text (CHITCHAT) */
+.navbar-brand-text {
+    margin: 0; /* Remove default margin from h1 */
+    padding: 0; /* Remove default padding from h1 */
+    line-height: 1; /* Adjust line height for better vertical alignment */
+    /* Inline styles for color and font-size are retained */
+}
+
+/* Navbar Collapse Section (for navigation links) */
+.navbar-collapse-section {
+    /* Flex grow to take available space if needed, or just let content dictate width */
+}
+
+/* Navigation List */
+.navbar-nav-list {
+    margin: 0; /* Remove default list margin */
+    padding: 0; /* Remove default list padding */
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Display list items in a row */
+    align-items: center; /* Vertically align items */
+    gap: 15px; /* Space between list items */
+    /* Inline style for color is retained */
+}
+
+    /* Individual list items */
+    .navbar-nav-list li {
+        /* No specific styles needed here unless you want to override default list item behavior */
+    }
+
+/* Profile Image */
+.profile-img {
+    /* Inline styles for width, height, border-radius, and margin-top are retained */
+    display: block; /* Ensures image behaves as a block for margin/padding */
+}
+
+/* Log off Button */
+.logoff-button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    .logoff-button:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+    }
+
+/* Navigation Links (Register, Login) */
+.nav-link-register,
+.nav-link-login {
+    color: white; /* Inherit color from parent ul or explicitly set */
+    text-decoration: none; /* Remove underline */
+    padding: 8px 12px; /* Add padding for clickable area */
+    transition: color 0.3s ease;
+}
+
+    .nav-link-register:hover,
+    .nav-link-login:hover {
+        color: lightgray; /* Subtle hover effect */
+    }
+
+.input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input-group-append, .input-group-prepend {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.chat_window .chat-history .message {
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+    color: #444;
+    font-size: 10px;
+    padding: 10px 15px;
+    line-height: 20px;
+    margin-bottom: 25px;
+    width: 90%;
+    position: relative;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+    .input-group .input-group-prepend,
+    .input-group .input-group-append {
+        display: flex;
+    }
+
+    .input-group .input-group-text {
+        display: flex;
+        align-items: center;
+        padding: 0.375rem 0.75rem;
+        margin-bottom: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        text-align: center;
+        white-space: nowrap;
+        background-color: #e9ecef;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+    }
+
+    .input-group .form-control {
+        display: block;
+        width: 81%;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+    }
+
+.chat_list li:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #e6e6e6;
+}
+
+hr {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.chatUIWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 1250px; /* Adjust as needed */
+    margin: 80px 20px 40px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chatUIContent {
+    width: 100%;
+}
+
+.chatUIScroll {
+    height: 100%;
+}
+
+.chatUIContainer {
+    display: flex;
+    height: 500px; /* Adjust height as needed for the chat window */
+    min-height: 500px; /* Minimum height for the chat interface */
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chatUIRow {
+    width: 100%;
+}
+
+.chatUIColumn {
+    width: 100%;
+    height: 100%;
+}
+
+.chatUICard {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/* --- Chat User Sidebar --- */
+.chatUserSidebar {
+    width: 300px; /* Fixed width for sidebar */
+    border-right: 1px solid #e0e0e0;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #c9c9c9 transparent; /* Firefox */
+}
+
+    /* Custom scrollbar for Webkit browsers (Chrome, Safari) */
+    .chatUserSidebar::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .chatUserSidebar::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .chatUserSidebar::-webkit-scrollbar-thumb {
+        background-color: #c9c9c9;
+        border-radius: 4px;
+        border: 2px solid transparent; /* Gives a subtle border */
+    }
+
+
+.chatSearchBar {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #ffffff; /* White background for search bar */
+    flex-shrink: 0; /* Prevent it from shrinking */
+}
+
+.chatSearchIcon {
+    margin-right: 10px;
+    color: #888;
+}
+
+.chatSearchInput {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 8px 15px;
+    outline: none;
+    font-size: 14px;
+}
+
+    .chatSearchInput::placeholder {
+        color: #aaa;
+    }
+
+.chatUserList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Allows the list to take available space and scroll */
+    overflow-y: auto; /* Enable vertical scrolling for the user list */
+}
+
+.chatUserEntry {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s ease;
+}
+
+    .chatUserEntry:hover {
+        background-color: #e6f7ff; /* Light blue on hover */
+    }
+
+    /* Selected user styling (similar to image) */
+    .chatUserEntry.selected {
+        background-color: #e0f2f7; /* Slightly darker blue for selected */
+        border-left: 3px solid #007bff; /* Blue border for selected */
+    }
+
+
+.chatUserAvatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    border: 1px solid #eee; /* Subtle border for avatar */
+}
+
+.chatUserInfo {
+    flex-grow: 1;
+}
+
+.chatUserName {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.chatUserStatus {
+    font-size: 13px;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+    .chatUserStatus .zmdi-circle {
+        font-size: 10px;
+        margin-right: 5px;
+        color: #4CAF50; /* Green for online */
+    }
+
+/* --- Chat UI Window (Main Chat Area) --- */
+.chatUIWindow {
+    width: 900px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #fcfcfc;
+}
+
+.chatUIHeader {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    z-index: 10; /* Ensure header is above other content */
+    flex-shrink: 0; /* Prevent it from shrinking */
+}
+
+    .chatUIHeader img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+        object-fit: cover;
+        border: 1px solid #eee;
+    }
+
+.chatUIUser {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.chatUIUserInfo {
+    line-height: 1.2;
+}
+
+.chatUIUserName {
+    font-weight: 500;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.chatUIMessageCount {
+    font-size: 13px;
+    color: #777;
+}
+
+.chatUIToggle {
+    color: #007bff;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.chatUIBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.05; /* Very subtle background image */
+    z-index: 1;
+}
+
+.chatUIHistory {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    flex-grow: 1;
+    overflow-y: auto; /* Enable vertical scrolling for messages */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between messages */
+    z-index: 2; /* Ensure messages are above background */
+    position: relative; /* For proper stacking context */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #c9c9c9 transparent; /* Firefox */
+}
+
+    /* Custom scrollbar for Webkit browsers (Chrome, Safari) */
+    .chatUIHistory::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .chatUIHistory::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .chatUIHistory::-webkit-scrollbar-thumb {
+        background-color: #c9c9c9;
+        border-radius: 4px;
+        border: 2px solid transparent;
+    }
+
+
+/* Styling for individual chat messages (based on the image) */
+.chatUIHistory li {
+    display: flex;
+    margin-bottom: 0; /* Removed margin-bottom here to use gap */
+    align-items: flex-end; /* Align to the bottom of the message bubble */
+}
+
+.chatUIHistory li.sent { /* For messages sent by 'You' */
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.chatUIHistory li.received { /* For messages received from others */
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.chatUIMessageBubble {
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    line-height: 1.4;
+    position: relative;
+    word-wrap: break-word; /* Ensure long words wrap */
+}
+
+.chatUIMessageBubble.sent {
+    background-color: #e0f7fa; /* Light blue for sent messages */
+    color: #333;
+    border-bottom-right-radius: 5px; /* Flat corner on the sent side */
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.chatUIMessageBubble.received {
+    background-color: #f0f0f0; /* Light gray for received messages */
+    color: #333;
+    border-bottom-left-radius: 5px; /* Flat corner on the received side */
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.chatUIMessageContent {
+    font-size: 15px;
+}
+
+.chatUIMessageTimestamp {
+    font-size: 11px;
+    color: #999;
+    margin-top: 5px;
+    display: block; /* Ensures timestamp is on a new line */
+    text-align: right; /* Align timestamp to the right within the bubble */
+}
+
+.chatUIMessageBubble.received .chatUIMessageTimestamp {
+    text-align: right; /* Align timestamp to the left within the bubble for received */
+}
+
+
+/* "You" indicator for sent messages */
+.chatUIMessageBubble.sent .chatUISenderIndicator {
+    font-size: 11px;
+    color: #007bff;
+    font-weight: 500;
+    margin-left: 8px;
+    white-space: nowrap; /* Prevent "You" from wrapping */
+}
+
+.chatUIMessageBubble.received .chatUISenderIndicator {
+    font-size: 11px;
+    color: #007bff;
+    font-weight: 500;
+    margin-left: 8px;
+    white-space: nowrap; /* Prevent "You" from wrapping */
+}
+
+.chatUIMessageBox {
+    padding: 15px 20px;
+    border-top: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    z-index: 10; /* Ensure message box is above other content */
+    flex-shrink: 0; /* Prevent it from shrinking */
+}
+
+.chatUIInputGroup {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 25px; /* More rounded for input box */
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.chatUIInput {
+    flex-grow: 1;
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+/* Corrected Send Button Styling */
+.chatUISendButton {
+    background-color: #007bff; /* Blue send button */
+    color: white;
+    width: 50px; /* Fixed width for the button */
+    height: 40px; /* Fixed height, matching the input height */
+    border-radius: 20px; /* Highly rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-right: 5px; /* Margin to separate from input field edge */
+    flex-shrink: 0; /* Prevent it from shrinking */
+}
+
+    .chatUISendButton:hover {
+        background-color: #0056b3;
+    }
+
+.chatUISendIcon {
+    font-size: 1.3em;
+}
+
+/* --- Welcome Screen --- */
+.chatUIWelcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    padding: 50px;
+}
+
+    .chatUIWelcome center {
+        font-size: 1.8em;
+        font-weight: 500;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+.chatUIWelcomeImage {
+    max-width: 60%;
+    height: auto;
+    opacity: 0.8;
+}
+
+/* --- Utility Classes / General Styling --- */
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 0; /* Remove default margin for hr */
+}
+
+/* Header for the whole application - "CHITCHAT" and "Log off" */
+.app-header {
+    background-color: #007bff; /* Blue header */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    position: absolute; /* Position above the main chat wrapper */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; /* Ensure it's on top */
+}
+
+.app-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.log-off {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+    .log-off:hover {
+        opacity: 1;
+    }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .chatUIContainer {
+        flex-direction: column;
+        height: 90vh; /* Adjust height for smaller screens */
+        min-height: unset;
+    }
+
+    .chatUserSidebar {
+        width: 100%;
+        max-height: 200px; /* Limit sidebar height on small screens */
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .chatUIWindow {
+        flex-grow: 1;
+    }
+
+    .chatUIHeader {
+        padding: 10px 15px;
+    }
+
+        .chatUIHeader img {
+            width: 40px;
+            height: 40px;
+        }
+
+    .chatUIMessageBox {
+        padding: 10px 15px;
+    }
+
+    .chatUIInputGroup {
+        border-radius: 20px; /* Adjust for smaller screens */
+    }
+
+    .chatUISendButton {
+        width: 40px;
+        height: 35px;
+        border-radius: 18px;
+    }
+}

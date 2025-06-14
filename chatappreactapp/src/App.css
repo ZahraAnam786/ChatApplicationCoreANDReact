@@ -1,0 +1,75 @@
+/*#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+*/
+
+
+
+/* For Firefox and other modern browsers that support the standard CSS Scrollbars Module */
+body {
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+    scrollbar-color: #888 #f1f1f1; /* Sets the thumb color (#888) and track color (#f1f1f1) */
+}
+
+    /* For Chrome, Edge, Safari (Webkit browsers) */
+    /* This targets the entire scrollbar */
+    body::-webkit-scrollbar {
+        width: 5px; /* Sets the width for vertical scrollbars to make them thin */
+        height: 5px; /* Sets the height for horizontal scrollbars */
+    }
+
+    /* This targets the scrollbar track (the background area) */
+    body::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Light gray background for the track */
+        border-radius: 10px; /* Optional: adds rounded corners to the track */
+    }
+
+    /* This targets the scrollbar thumb (the draggable part) */
+    body::-webkit-scrollbar-thumb {
+        background-color: #888; /* Darker gray color for the thumb */
+        border-radius: 10px; /* Optional: adds rounded corners to the thumb */
+    }
+
+        /* Optional: change thumb color on hover */
+        body::-webkit-scrollbar-thumb:hover {
+            background: #555; /* A slightly darker gray on hover */
+        }
