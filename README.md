@@ -2,7 +2,7 @@
 
 A web application built with **React** (frontend) and **.Net Core, Sql** (backend service).
 
-- **chatappreactapp** Folder is react application.
+**chatappreactapp** Folder is react application.
   
 Used **SignalR** For real time communication
 ---
